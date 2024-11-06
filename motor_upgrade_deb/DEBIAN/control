@@ -1,0 +1,10 @@
+Package: motor-upgrade  
+Version: 1.0  
+Section: base  
+Priority: optional  
+Architecture: all  
+Depends: 
+Maintainer: <wuyunzhou@directdrive.com>  
+Description: Motor upgrade package  
+ .  
+ This package contains the motor upgrade files and dependencies.
