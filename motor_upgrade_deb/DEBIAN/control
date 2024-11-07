@@ -2,7 +2,7 @@ Package: motor-upgrade
 Version: 1.0  
 Section: base  
 Priority: optional 
-Architecture: aarch64
+Architecture: arm64
 Depends: python3-crcmod,python3-pycryptodome
 Maintainer: <wuyunzhou@directdrive.com>  
 Description: Motor upgrade package  
