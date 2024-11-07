@@ -1,6 +1,9 @@
 #!/bin/bash  
 set -e  
 
+sudo pip install pycryptodome
+sudo pip install crcmod
+
 # Copy motor_upgrade files  
 cp -r ../usr/motor_upgrade/* /usr/  
 
@@ -12,6 +15,7 @@ cp ../usr/motor_upgrade/ota_lib/otafifth_demo /usr/bin/
 
 # Set permissions for the executable  
 chmod 777 /usr/bin/otafifth_demo 
+chmod 777 /usr/bin/
 
 cd ../usr/motor_upgrade/
 
