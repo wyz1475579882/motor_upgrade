@@ -15,7 +15,7 @@ cp ../usr/motor_upgrade/ota_lib/otafifth_demo /usr/bin/
 
 # Set permissions for the executable  
 chmod 777 /usr/bin/otafifth_demo 
-chmod 777 /usr/bin/
+chmod 777 /usr/motor_upgrade/run.sh
 
 cd ../usr/motor_upgrade/
 
