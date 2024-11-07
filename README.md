@@ -24,6 +24,7 @@
 
 ### To make motor_upgrade_deb.deb:
     chmod 0755 motor_upgrade_deb/DEBIAN/postinst
+    chmod 0755 motor_upgrade_deb/DEBIAN/prerm
     fakeroot dpkg-deb -b motor_upgrade_deb
 
 ### To install motor_upgrade_deb.deb:
