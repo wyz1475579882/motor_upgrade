@@ -1,9 +1,6 @@
 #!/bin/bash  
 set -e  
 
-sudo pip install pycryptodome
-sudo pip install crcmod
-
 # Copy motor_upgrade files  
 cp -r ../usr/motor_upgrade/* /usr/  
 
@@ -12,17 +9,11 @@ cp ../usr/motor_upgrade/ota_lib/*.so /usr/lib/
 
 # Copy executable  
 cp ../usr/motor_upgrade/ota_lib/otafifth_demo /usr/bin/  
+cp ../usr/motor_upgrade/can-app   /usr/bin 
 
 # Set permissions for the executable  
 chmod 777 /usr/bin/otafifth_demo 
 chmod 777 /usr/motor_upgrade/run.sh
-
-cd ../usr/motor_upgrade/
-
-make
-
-cp can-app /usr/bin
-# using pip or apt-get, but it's better to list them in the Depends field  
-# of the control file and let dpkg handle them.  
+chmod 777 /usr/bin/can-app
 
 exit 0

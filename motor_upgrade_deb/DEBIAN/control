@@ -3,7 +3,7 @@ Version: 1.0
 Section: base  
 Priority: optional 
 Architecture: arm64
-Depends: make, gcc, g++
+Depends: make, gcc, g++,python3-pycryptodome,python3-crcmod,python3-pip
 Maintainer: <wuyunzhou@directdrive.com>  
 Description: Motor upgrade package  
  .  

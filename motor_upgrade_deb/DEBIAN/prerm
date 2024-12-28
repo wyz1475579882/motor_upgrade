@@ -5,6 +5,7 @@ set -e
 MOTOR_UPGRADE_DIR="/usr/motor_upgrade"
 OTA_LIB_DIR="/usr/lib/ota_lib"
 EXECUTABLE="/usr/bin/otafifth_demo"
+rm /usr/bin/can-app
 
 # Stopping a service if necessary (example, replace with your actual service name)
 # systemctl stop your_service_name
@@ -21,13 +22,6 @@ fi
 if [ -f "$EXECUTABLE" ]; then
     rm "$EXECUTABLE"
 fi
-
-# Note: It's generally not recommended to uninstall packages using pip in prerm scripts,
-# as dpkg/apt don't track these changes properly. Instead, list these dependencies in the
-# Depends field of the control file and let dpkg handle the installation/removal.
-# However, if absolutely necessary, you can add the following lines, but use them with caution.
-# sudo pip uninstall pycryptodome || true
-# sudo pip uninstall crcmod || true
 
 # Exit with status 0 indicating success
 exit 0

@@ -28,8 +28,8 @@ file_size_define_spec = """\r\n\nuint32_t upgradeCaseGetFileSize(void)
 list_data = []
 list_bytes = []
 
-from Crypto.Cipher import AES
-from Crypto.Util import Counter
+from Cryptodome.Cipher import AES
+from Cryptodome.Util import Counter
 import crcmod.predefined
 import array
 import hashlib
