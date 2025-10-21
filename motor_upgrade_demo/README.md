@@ -6,7 +6,7 @@
 
 3、请将wheel.bin替换成当前的需要升级的轮毂电机版本,并命名为wheel.bin
 
-4、升级电机前需要先装好motor_upgrade_deb.deb
+4、升级电机前需要先装好motor_upgrade_deb.deb（deb在上层目录）
 
 
 以上配置完成之后,执行以下指令,升级八个电机或者查询电机版本
