@@ -1,11 +1,16 @@
 
 
 1、请将new_zephyr.bin替换成当前的zepgyr OTA版本,并命名为new_zephyr.bin
+
 2、请将slow.bin替换成当前的需要升级的减速电机版本,并命名为slow.bin
+
 3、请将wheel.bin替换成当前的需要升级的轮毂电机版本,并命名为wheel.bin
+
 4、升级电机前需要先装好motor_upgrade_deb.deb
 
+
 以上配置完成之后,执行以下指令,即可自动升级TITA 8个电机
+
 
 ### To run upgrade:
     chmod 777 update-motor.sh
@@ -14,6 +19,7 @@
 请注意：要加sudo权限才能升级
 
 成功log如下(电机版本号总共八包，每包9个字节，前八个是返回的版本号，第九个字节01代表左腿，00代表右腿，哪个通讯不上方便排查):
+
 
 ### 执行LOG:
     robot@tita:~/motor_upgrade/motor_upgrade_demo$ sudo ./update-motor.sh
