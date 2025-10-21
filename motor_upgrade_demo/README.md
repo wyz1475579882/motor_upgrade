@@ -1,8 +1,9 @@
-升级电机需要先装好motor_upgrade_deb.deb,
+
 
 1、请将new_zephyr.bin替换成当前的zepgyr OTA版本,并命名为new_zephyr.bin
 2、请将slow.bin替换成当前的需要升级的减速电机版本,并命名为slow.bin
 3、请将wheel.bin替换成当前的需要升级的轮毂电机版本,并命名为wheel.bin
+4、升级电机前需要先装好motor_upgrade_deb.deb
 
 以上配置完成之后,执行以下指令,即可自动升级TITA 8个电机
 
