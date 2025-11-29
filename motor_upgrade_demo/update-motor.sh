@@ -5,7 +5,8 @@ max_attempts=10
 # 计数器初始化为0
 counter=0
 
-systemctl stop tita-bringup.service
+# systemctl stop tita-bringup.service
+systemctl stop joy_controller.service && systemctl stop rl8_controller.service &&  systemctl stop rl16_controller.service
 
 sleep 3
 
